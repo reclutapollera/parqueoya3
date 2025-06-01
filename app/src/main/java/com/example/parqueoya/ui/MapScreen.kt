@@ -40,41 +40,7 @@ fun Context.hasLocationPermission(): Boolean {
     ) == PackageManager.PERMISSION_GRANTED
 }
 
-// Función para obtener la ubicación actual
-fun getCurrentLocation(
-    fusedLocationClient: FusedLocationProviderClient,
-    context: Context,
-    onLocationResult: (Location?) -> Unit
-) {
-    try {
-        // Verificar permisos primero
-        if (ContextCompat.checkSelfPermission(
-                context,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED &&
-            ContextCompat.checkSelfPermission(
-                context,
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            onLocationResult(null)
-            return
-        }
-
-        // Obtener la ubicación
-        fusedLocationClient.lastLocation
-            .addOnSuccessListener { location: Location? ->
-                onLocationResult(location)
-            }
-            .addOnFailureListener { exception ->
-                Toast.makeText(context, "Error al obtener ubicación: ${exception.message}", Toast.LENGTH_SHORT).show()
-                onLocationResult(null)
-            }
-    } catch (e: SecurityException) {
-        Toast.makeText(context, "Error de seguridad al obtener ubicación", Toast.LENGTH_SHORT).show()
-        onLocationResult(null)
-    }
-}
+git commit -m "Corrige función getCurrentLocation duplicada y mejora el manejo de ubicación"git commit -m "Corrige función getCurrentLocation duplicada y mejora el manejo de ubicación"git commit -m "Corrige función getCurrentLocation duplicada y mejora el manejo de ubicación"
 
 @Composable
 fun MapScreen() {
