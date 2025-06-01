@@ -1,0 +1,84 @@
+# Archivos de aplicación compilados
+*.apk
+*.aab
+*.ap_
+
+# Archivos para la máquina virtual Dalvik
+*.dex
+
+# Archivos de clase de Java
+*.class
+
+# Archivos de Keystore
+*.jks
+*.keystore
+
+# Archivos generados
+bin/
+gen/
+out/
+build/
+
+# Archivos de Gradle
+.gradle/
+build/
+local.properties
+*.iml
+*.ipr
+*.iws
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Archivos de configuración local (ruta del SDK, etc.)
+local.properties
+
+# Archivos del editor de navegación de Android Studio
+.navigation/
+
+# Archivos de datos del Android Studio Profiler
+*.snapshot
+
+# Archivos ASMM de Android Studio
+*.asmm
+
+# Carpeta de compilación específica de Android Studio
+captures/
+
+# Archivos de registro
+*.log
+
+# Plugin de Crashlytics
+com_crashlytics_export_strings.xml
+
+# Token de Fabric (Intercom)
+fabric.properties
+
+# Archivos Kapt
+* kapt_compiler_args.json
+
+# Archivos JAR referenciados
+# libs/*.jar
+
+# Archivos Realm
+*.realm.lock
+*.realm.management
+*.realm.note
+*.realm
+
+# Google services (ubicar en src/main/google-services.json)
+# google-services.json
+
+# Secretos (claves API, etc.) - TEN CUIDADO CON ESTO
+# Si tienes un archivo secrets.properties o similar, agrégalo aquí
+# secrets.properties
+
+# Archivos del sistema
+.DS_Store
+
+# Archivos nativos externos
+.externalNativeBuild/
+.cxx/

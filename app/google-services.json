@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "168675723727",
+    "project_id": "parqueoya-9392c",
+    "storage_bucket": "parqueoya-9392c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168675723727:android:daf63a43e397fc7ace2aba",
+        "android_client_info": {
+          "package_name": "com.example.parqueoya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQEd3XFUVKmfcXxwmABhw5byfQDNO-K2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
